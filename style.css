@@ -19,11 +19,11 @@ body {
 	grid-row: content-start / display-end;
 	border-right: dotted black 2px;
 	padding-right: 1.5em;
-	font-size: 1.15em;
+	font-size: 1em;
 }
 
 #self-description {
-	font-size: 1.1em;
+	margin-bottom: 1.5em;
 }
 
 #sidebar {
@@ -51,7 +51,9 @@ body {
 	font-size: 1.5em;
 }
 .content-title {
+	font-weight: bold;
 	font-size: 2em;
+	color: brown;
 }
 a {
 	text-decoration: none;
@@ -68,4 +70,8 @@ a:hover {
 }
 .menu > a {
 	display: block;
+}
+
+ul {
+	margin-top: 0;
 }
