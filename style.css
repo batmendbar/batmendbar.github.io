@@ -35,3 +35,16 @@ body {
 	border: 0.5px solid black;
 	box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.75);
 }
+
+.contact-type {
+	display: inline;
+}
+.contact-text {
+	display: inline;
+}
+.contacts {
+	margin-top: 1em;
+}
+.contacts > .title {
+	font-size: 1.5em;
+}
