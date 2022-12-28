@@ -45,6 +45,12 @@ body {
 .contacts {
 	margin-top: 1em;
 }
-.contacts > .title {
+.sidebar-title {
 	font-size: 1.5em;
+}
+.projects {
+	margin-top: 2em;
+}
+.content-title {
+	font-size: 2em;
 }
