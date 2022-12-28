@@ -1,0 +1,37 @@
+body {
+	display: grid;
+	height: 100vh;
+	color: brown;
+	grid-template-columns: [display-start] 1fr [content-start] 5fr [divider] 2fr [content-end] 0.5fr [display-end];
+	grid-template-rows: [display-start] 0.9fr [content-start] 6fr [display-end];
+}
+
+#title-name {
+	padding-top: 0.3em;
+	grid-column: content-start / content-end;
+	grid-row: display-start / content-start;
+	font-size: 4em;
+}
+
+#content {
+	grid-column: content-start / divider;
+	grid-row: content-start / display-end;
+	border-right: dotted black 2px;
+	padding-right: 1.5em;
+}
+
+#self-description {
+	font-size: 1.1em;
+}
+
+#sidebar {
+	padding-left: 1.5em;
+	grid-column: divider / content-end;
+	grid-row: content-start / display-end;
+}
+
+#headshot {
+	height: 40vh;
+	border: 0.5px solid black;
+	box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.75);
+}
