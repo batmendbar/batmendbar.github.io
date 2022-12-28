@@ -1,7 +1,6 @@
 body {
 	display: grid;
 	height: 100vh;
-	color: brown;
 	grid-template-columns: [display-start] 1fr [content-start] 5fr [divider] 2fr [content-end] 0.5fr [display-end];
 	grid-template-rows: [display-start] 0.9fr [content-start] 6fr [display-end];
 	font-family: "Spectral", serif;
@@ -56,4 +55,13 @@ body {
 }
 .content-title {
 	font-size: 2em;
+}
+a {
+	text-decoration: none;
+	font-style: normal;
+	color: brown;
+}
+
+a:hover {
+	text-decoration: underline;
 }
