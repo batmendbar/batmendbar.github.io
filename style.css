@@ -4,6 +4,7 @@ body {
 	color: brown;
 	grid-template-columns: [display-start] 1fr [content-start] 5fr [divider] 2fr [content-end] 0.5fr [display-end];
 	grid-template-rows: [display-start] 0.9fr [content-start] 6fr [display-end];
+	font-family: "Spectral", serif;
 }
 
 #title-name {
@@ -11,6 +12,7 @@ body {
 	grid-column: content-start / content-end;
 	grid-row: display-start / content-start;
 	font-size: 4em;
+	font-weight: bold;
 }
 
 #content {
@@ -18,6 +20,7 @@ body {
 	grid-row: content-start / display-end;
 	border-right: dotted black 2px;
 	padding-right: 1.5em;
+	font-size: 1.15em;
 }
 
 #self-description {
@@ -50,7 +53,6 @@ body {
 }
 .projects {
 	margin-top: 2em;
-	font-size: 1.3em;
 }
 .content-title {
 	font-size: 2em;
