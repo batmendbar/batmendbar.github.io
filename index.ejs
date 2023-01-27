@@ -1,159 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet">
+<%- include ("components/head.ejs") %>
 
+    <body>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
+        </style>
 
-    <title>Batmend Batsaikhan</title>
-</head> 
+        <%- include ("components/header.ejs") %>
 
-<body>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap');
-    </style>
-
-    <div id="title-name"><a href="/">Batmend Batsaikhan</a></div>
-    <div id="content">
-        <div id="self-description">
-            I am a junior Computer Science major at Carleton College. My interest is in full stack development
-            and quantitative trading. I am also an experienced competitive programmer with a rich background in
-            mathematical
-            olympiads.
-        </div>
-        <div class="overview">
-            <div class="content-title">
-                Glance of Me
-            </div>
-            <div class="overview-text">
-                <ul>
-                    <li>ICPC North America Championship Finalist</li>
-                    <li>Administrator of Myangat - a database-oriented web project</li>
-                    <li>x2 International Mathematical Olympiad Medalist</li>
-                    <li>x2 National Mathematical Olympiad Champion</li>
-                </ul>
-            </div>
-        </div>
-        <div class="competitions">
-            <div class="content-title">
-                <a href="/subpages/competitions.html">Competitions</a>
-            </div>
-            <ul>
-                <li>International Collegiate Programming Contest</li>
-                <li>International Mathematical Olympiad</li>
-                <li>International Olympiad in Informatics</li>
-                <li>National Mathematical Olympiad</li>
-                <li>National Olympiad in Informatics</li>
-                <li>National Physics Olympiad</li>
-            </ul>
-        </div>
-        <div class="projects">
-            <div class="content-title">
-                <a href="/subpages/projects.html">Projects</a>
-            </div>
-            <ul>
-                <li>
-                    <a href="https://www.myangat.com/" target="_blank">
-                        Myangat (Mongolian science competition database)
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/batmendbar/scheme-interpreter" target="_blank">
-                        Scheme Interpreter
-                    </a>
-                </li>
-                <li>Megashare (Resource sharing application for android phones)</li>
-                <li>Encrypted file sharing application</li>
-                <li>Where2School (Database-centered website for Minnesota highschool covid history)</li>
-                <li>Beach Scene (Rendered with OpenGL)</li>
-                <li>Skydrift (Mini drifting game)</li>
-                <li>Rocket Launcher (Mini shooting game)</li>
-                <li>Event Aggregator (Data processing tool built with pandas library)</li>
-                <li>Currency Exchange Automator</li>
-            </ul>
-        </div>
-
-        <div>
-            <div class="content-title">
-                <a href="/subpages/education.html">Education</a>
-            </div>
-            <div class="education">
-                <div class="education-title">
-                    BA at Carleton College, 3.8/4.0 GPA
+            <div id="content">
+                <div id="self-description">
+                    I am a junior Computer Science major at Carleton College. My interest is in full stack development
+                    and quantitative trading. I am also an experienced competitive programmer with a rich background in
+                    mathematical
+                    olympiads.
                 </div>
-                <div class="education-subtitle">
-                    Computer Science Major, Mathematics Minor
+                <div class="overview">
+                    <div class="content-title">
+                        Glance of Me
+                    </div>
+                    <div class="overview-text">
+                        <ul>
+                            <li><a href="https://www.carleton.edu/news/stories/carleton-students-attend-international-collegiate-programming-contest/"
+                                    target="_blank">
+                                    ICPC North America Championship Finalist</a></li>
+                            <li><a href="https://www.myangat.com/">Administrator of Myangat - a database-oriented web
+                                    project</a></li>
+                            <li><a href="https://www.imo-official.org/participant_r.aspx?id=27745" target="_blank">x2
+                                    International Mathematical Olympiad Medalist</a></li>
+                            <li>x2 National Mathematical Olympiad Champion</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <div class="education-text">
-                        Relevant Courses:
+                <div class="competitions">
+                    <div class="content-title">
+                        <a href="batmend/competitions">Competitions <div class="more">(more)</div></a>
                     </div>
                     <ul>
-                        <li>Theory of Computing</li>
-                        <li>Applied Cryptography</li>
-                        <li>Computer Graphics</li>
-                        <li>Mobile Software Development</li>
-                        <li>Software Design</li>
-                        <li>Programming Languages</li>
-                        <li>Algorithms</li>
-                        <li>Introduction to Computer Systems</li>
-                        <li>Human Computer Interaction,</li>
-                        <li>Data Structures,</li>
-                        <li>Math of Computer Science,</li>
-                        <li>Quantum Computing,</li>
-                        <li>Statistics Inference</li>
-                        <li>Probability</li>
-
+                        <li>International Collegiate Programming Contest</li>
+                        <li>International Mathematical Olympiad</li>
+                        <li>International Olympiad in Informatics</li>
+                        <li>National Mathematical Olympiad</li>
+                        <li>National Olympiad in Informatics</li>
+                        <li>National Physics Olympiad</li>
                     </ul>
                 </div>
-            </div>
-        </div>
+                <div class="projects">
+                    <div class="content-title">
+                        <a href="batmend/projects">Projects <div class="more">(more)</div></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="https://www.myangat.com/" target="_blank">
+                                Myangat (Mongolian science competition database)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/batmendbar/scheme-interpreter" target="_blank">
+                                Scheme Interpreter
+                            </a>
+                        </li>
+                        <li>Megashare (Resource sharing application for android phones)</li>
+                        <li>Encrypted file sharing application</li>
+                        <li>Where2School (Database-centered website for Minnesota highschool covid history)</li>
+                        <li>Beach Scene (Rendered with OpenGL)</li>
+                        <li>Skydrift (Mini drifting game)</li>
+                        <li>Rocket Launcher (Mini shooting game)</li>
+                        <li>Event Aggregator (Data processing tool built with pandas library)</li>
+                        <li>Currency Exchange Automator</li>
+                    </ul>
+                </div>
 
-    </div>
-    <div id="sidebar">
-        <img id="headshot" src="headshot.png" alt="headshot"></img>
-        <div class="menu">
-            <a href="subpages/competitions.html">Competitions</a>
-            <a href="subpages/projects.html">Projects</a>
-            <a href="subpages/education.html">Education</a>
-        </div>
-        <div class="contacts">
-            <div class="sidebar-title">
-                Contact
-            </div>
-            <div class="contact">
-                <div class="contact-type">Email: </div>
-                <div class="contact-text">
-                    <a href="mailto: batsaikhanb@carleton.edu">
-                        batsaikhanb@carleton.edu
-                    </a>
+                <div>
+                    <div class="content-title">
+                        <a href="batmend/education">Education <div class="more">(more)</div></a>
+                    </div>
+                    <div class="education">
+                        <div class="education-title">
+                            BA at Carleton College, 3.8/4.0 GPA
+                        </div>
+                        <div class="education-subtitle">
+                            Computer Science Major, Mathematics Minor
+                        </div>
+                        <div>
+                            <div class="education-text">
+                                Relevant Courses:
+                            </div>
+                            <ul>
+                                <li>Theory of Computing</li>
+                                <li>Applied Cryptography</li>
+                                <li>Computer Graphics</li>
+                                <li>Mobile Software Development</li>
+                                <li>Software Design</li>
+                                <li>Programming Languages</li>
+                                <li>Algorithms</li>
+                                <li>Introduction to Computer Systems</li>
+                                <li>Human Computer Interaction,</li>
+                                <li>Data Structures,</li>
+                                <li>Math of Computer Science,</li>
+                                <li>Quantum Computing,</li>
+                                <li>Statistics Inference</li>
+                                <li>Probability</li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-            <div class="contact">
-                <div class="contact-type">Github: </div>
-                <div class="contact-text">
-                    <a href="https://github.com/batmendbar" target="_blank">
-                        batmendbar
-                    </a>
-                </div>
-            </div>
-            <div class="contact">
-                <div class="contact-type">LinkedIn: </div>
-                <div class="contact-text">
-                    <a href="https://www.linkedin.com/in/batmendbar" target="_blank">
-                        batmendbar
-                    </a>
-                </div>
-            </div>
-        </div>
-</body>
+            <%- include ("components/sidebar.ejs") %>
+    </body>
 
 </html>
