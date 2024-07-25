@@ -1,0 +1,6 @@
+[book]
+authors = ["Batmend Batsaikhan"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Teaching C++ to a Third Grader"
