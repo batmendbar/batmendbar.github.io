@@ -1,6 +1,6 @@
 [book]
 authors = ["Batmend Batsaikhan"]
-language = "en"
+language = "mn"
 multilingual = false
 src = "src"
-title = "Teaching C++ to a Third Grader"
+title = "Багачуудад Код Заах нь"
