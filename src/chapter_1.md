@@ -1,12 +1,13 @@
 # Chapter 1
 
-## Сайн уу дэлхий!
+## Сайн уу, Дэлхий?
 
 ```cpp
 #include <iostream>
+using namespace std;
 
 int main() {
-    std::cout << "Сайн уу дэлхий!" << std::endl;
+    std::cout << "Сайн уу, Дэлхий?";
     return 0;
 }
 ```
